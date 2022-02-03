@@ -58,8 +58,10 @@ function App() {
   }
 
   return (
+    <>
+    <h1 className='text-center mt-3 mb-5 text-danger'>DashFlix</h1>
     <div className='container-fluid movie-app'>
-      <div className='row d-flex align-items-center mt-4 mb-4'>
+      <div className='row d-flex align-items-center mt-4 mb-3'>
         <MovieListHeading heading='Movies' />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
@@ -81,6 +83,7 @@ function App() {
         />
       </div>
     </div>
+        </>
   );
 }
 
